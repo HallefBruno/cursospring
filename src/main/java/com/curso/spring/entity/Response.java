@@ -1,6 +1,7 @@
 
 package com.curso.spring.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -18,6 +19,7 @@ public class Response<T> {
     }
 
     public List<String> getErros() {
+        if(erros == null) return new ArrayList<>();
         return erros;
     }
 
